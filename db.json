@@ -1,0 +1,109 @@
+{
+  "loginform": [
+    {
+      "id": "1",
+      "role": "patient",
+      "username": "John Doe",
+      "phone": "1234567890",
+      "email": "johndoe@example.com",
+      "password": "password123",
+      "isLoggedIn": false
+    },
+    {
+      "id": "2f51",
+      "role": "patient",
+      "username": "Piero",
+      "phone": "3335566777",
+      "email": "sample@sample.com",
+      "password": "1234",
+      "isLoggedIn": false
+    },
+    {
+      "id": "4b95",
+      "role": "patient",
+      "username": "Erika",
+      "phone": "3407898099",
+      "email": "erika@gmail.com",
+      "password": "12345",
+      "isLoggedIn": false
+    },
+    {
+      "id": "9791",
+      "role": "patient",
+      "username": "Cacio",
+      "phone": "3278899000",
+      "email": "cacio@cacio.com",
+      "password": "1234",
+      "isLoggedIn": false
+    },
+    {
+      "id": "3e2a",
+      "role": "patient",
+      "username": "Piero",
+      "phone": "3407890122",
+      "email": "dadone.giovanni94@gmail.com",
+      "password": "12234",
+      "isLoggedIn": true
+    }
+  ],
+  "doctors": [
+    {
+      "name": "John Doe",
+      "specialization": "Cardiology",
+      "id": "39ea"
+    },
+    {
+      "name": "Jane Smith",
+      "specialization": "Neurology",
+      "id": "accc"
+    },
+    {
+      "name": "Emily Johnson",
+      "specialization": "Pediatrics",
+      "id": "5391"
+    },
+    {
+      "name": "Michael Brown",
+      "specialization": "Orthopedics",
+      "id": "66e2"
+    },
+    {
+      "name": "Sarah Davis",
+      "specialization": "Dermatology",
+      "id": "c11f"
+    },
+    {
+      "name": "David Wilson",
+      "specialization": "Ophthalmology",
+      "id": "6bc9"
+    },
+    {
+      "name": "Laura Martinez",
+      "specialization": "Endocrinology",
+      "id": "b7dd"
+    },
+    {
+      "name": "James Anderson",
+      "specialization": "Gastroenterology",
+      "id": "37f9"
+    },
+    {
+      "name": "Sophia Lee",
+      "specialization": "Oncology",
+      "id": "bea4"
+    }
+  ],
+  "isLoggedIn": {
+    "isLoggedIn": false
+  },
+  "appointments": [],
+  "instantappointments": [
+    {
+      "id": "37a6",
+      "name": "Giovanni",
+      "cause": "Headache",
+      "itemname": "Jane Smith",
+      "itemspecialization": "Neurology"
+    }
+  ]
+}
