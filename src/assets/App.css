@@ -1,0 +1,213 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.dropdown-button {
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+  z-index: 1;
+}
+
+/* Container for the whole component */
+.searchresults {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Make it vertical: search bar on top, results below */
+}
+
+/* Search bar container, on top of everything */
+.searchbar-container {
+  position: relative;
+  margin-bottom: 30px; /* Create space between the search bar and the cards */
+}
+
+/* Stylish search input */
+.searchbar-container input[type='text'] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Focused input box styling */
+.searchbar-container input[type='text']:focus {
+  border-color: #0645ff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Suggestions container */
+.suggestions-container {
+  position: absolute;
+  width: 100%;
+  top: 50px; /* Adjust based on the input height */
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Suggestions list */
+.suggestions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+}
+
+/* Individual suggestion */
+.suggestions-list li {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for suggestions */
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Results section (cards) */
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; /* Take up remaining space */
+}
+
+/* Individual result card */
+.result-card {
+  background-color: #f9f9f9;
+  color: #000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  min-height: 120px;
+  text-align: center;
+}
+
+/* Hover effect for result card */
+.result-card:hover {
+  background-color: #0645ff;
+  color: rgb(0, 0, 0);
+}
+
+/* Button inside the result card */
+.result-card button {
+  background-color: white;
+  color: 0645ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.result-card button:hover {
+  background-color: #0034ae;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .searchresults {
+    flex-direction: column;
+  }
+  .results {
+    grid-template-columns: 1fr; /* Stack results vertically on smaller screens */
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.booking-form {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.fixed-alert {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.booking-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above all other elements */
+}
+
+.booking-form2 {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.booking-form2 form {
+  display: flex;
+  flex-direction: column;
+}
